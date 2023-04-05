@@ -1,0 +1,743 @@
+body{
+    /* Desktop - 1 */
+
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #7C91C0;
+
+}
+
+.DeviceFrame {
+/* DeviceFrame */
+
+
+position: absolute;
+width: 545px;
+height: 805px;
+left: 447px;
+top: 139px;
+
+background: #676767;
+border-radius: 68px;
+box-shadow: 0 8px #585858;
+
+}
+
+.OutputScreen{
+    /* OutputScreen */
+
+
+position: absolute;
+width: 418px;
+height: 101px;
+left: 510px;
+top: 188px;
+
+background: #D9D9D9;
+border-radius: 17px;
+box-shadow: 0 7px #585858;
+
+}
+
+.Button0 {
+    /* Button2 */
+    
+    
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 590px;
+    top: 820px;
+    
+    background: #D9D9D9;
+    border-radius: 19px;
+}
+
+.Button1{
+    /* Button1 */
+
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 485px;
+top: 397px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Button2{
+/* Button2 */
+
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 590px;
+top: 397px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Button3{
+/* Button3 */
+
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 695px;
+top: 397px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Button4{
+    /* Button4 */
+
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 485px;
+top: 550px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Button5{
+/* Button5 */
+
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 590px;
+top: 550px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Button6{
+/* Button6 */
+
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 695px;
+top: 550px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Button7{
+    /* Button7 */
+
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 485px;
+top: 703px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Button8{
+/* Button8 */
+
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 590px;
+top: 703px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Button9{
+/* Button9 */
+
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 695px;
+top: 703px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Button1 p {
+    /* Num1 */
+position: absolute;
+width: 30px;
+height: 65px;
+left: 36px;
+top: -32px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+
+.Button2 p {
+    /* Num2 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 36px;
+top: -32px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.Button3 p {
+    /* Num3 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 36px;
+top: -32px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+
+.Button4 p {
+    /* Num4 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 36px;
+top: -32px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.Button5 p {
+    position: absolute;
+width: 30px;
+height: 65px;
+left: 36px;
+top: -32px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.Button6 p {
+    /* Num6 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 36px;
+top: -32px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.Button7 p {
+    /* Num7 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 36px;
+top: -32px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+
+.Button8 p {
+    /* Num8 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 36px;
+top: -32px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+
+
+color: #000000;
+}
+
+.Button0 p {
+    /* Num8 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 36px;
+top: -32px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+
+
+color: #000000;
+}
+
+.Button9 p {
+    /* Num9 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 36px;
+top: -32px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+
+.Equals {
+    /* Button9 */
+
+
+position: absolute;
+width: 129px;
+height: 100px;
+left: 835px;
+top: 703px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Plus {
+    /* Button6 */
+
+
+position: absolute;
+width: 68px;
+height: 100px;
+left: 835px;
+top: 396px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Minus {
+    /* Button6 */
+
+
+position: absolute;
+width: 68px;
+height: 100px;
+left: 910px;
+top: 398px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Multiply {
+    /* Button6 */
+
+
+position: absolute;
+width: 68px;
+height: 100px;
+left: 835px;
+top: 550px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Divide {
+    /* Button6 */
+
+
+position: absolute;
+width: 68px;
+height: 100px;
+left: 910px;
+top: 550px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.Equals p {
+        /* Num6 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 48px;
+top: -32px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.Plus p {
+     /* Num6 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 20px;
+top: -32px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.Clear p {
+    /* Num6 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 20px;
+top: -28px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+
+.Minus p {
+        /* Num6 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 22x;
+top: -36px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.Multiply p {
+        /* Num6 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 22px;
+top: -29px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.Divide p {
+        /* Num6 */
+
+
+position: absolute;
+width: 30px;
+height: 65px;
+left: 11px;
+top: -32px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 65px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.Button1:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Button2:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Button3:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Button4:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Button5:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Button6:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Button7:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Button8:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Button9:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Equals:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Plus:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Minus:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Button1:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Multiply:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Divide:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Button0:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Clear:active{
+
+    background-color: #8D8D8D;
+    box-shadow: 0 5px #585858;
+    transform: translateY(4px);
+}
+
+.Clear {
+    /* Button9 */
+
+position: absolute;
+width: 129px;
+height: 75px;
+left: 835px;
+top: 825px;
+
+background: #D9D9D9;
+border-radius: 19px;
+}
+
+.OutputScreen p {
+    position: absolute;
+    width: 30px;
+    height: 65px;
+    left: 22x;
+    top: -36px;
+    
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 65px;
+    /* identical to box height */
+    
+    
+    color: #000000;  
+}

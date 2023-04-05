@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Calculator App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="DeviceFrame"></div>
+    <div class="OutputScreen">
+        <p id="out"> </p>
+    </div>
+    <div class="Button0" onclick='CreateNumber("0")'>
+        <p>0</p>
+    </div>
+    <div class="Button1" onclick='CreateNumber("1")'>
+        <p>1</p>
+    </div>
+    <div class="Button2" onclick='CreateNumber("2")''>
+        <p>2</p>
+    </div>
+    <div class="Button3" onclick='CreateNumber("3")'>
+        <p>3</p>
+    </div>
+    <div class="Button4" onclick='CreateNumber("4")'>
+        <p>4</p>
+    </div>
+    <div class="Button5" onclick='CreateNumber("5")''>
+        <p>5</p>
+    </div>
+    <div class="Button6" onclick='CreateNumber("6")'>
+        <p>6</p>
+    </div>
+    <div class="Button7" onclick='CreateNumber("7")'>
+        <p>7</p>
+    </div>
+    <div class="Button8" onclick='CreateNumber("8")'>
+        <p>8</p>
+    </div>
+    <div class="Button9" onclick='CreateNumber("9")'>
+        <p>9</p>
+    </div>
+    <div class="Equals" onclick='Calculate()'>
+        <p>=</p>
+    </div>
+    <div class="Plus" onclick='ChooseOperation("+")'>
+        <p>+</p>
+    </div>
+    <div class="Minus" onclick='ChooseOperation("-")'>
+        <p>-</p>
+    </div>
+    <div class="Multiply" onclick='ChooseOperation("*")'>
+        <p>*</p>
+    </div>
+    <div class="Divide" onclick='ChooseOperation("/")'>
+        <p>/</p>
+    </div>
+    <div class="Clear" onclick='Erase()'>
+        <p>clear</p>
+    </div>
+
+</body>
+</html>
