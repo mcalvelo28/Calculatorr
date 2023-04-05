@@ -51,6 +51,7 @@ box-shadow: 0 7px #585858;
     height: 100px;
     left: 590px;
     top: 820px;
+    user-select: none;
     
     background: #D9D9D9;
     border-radius: 19px;
@@ -65,6 +66,7 @@ width: 100px;
 height: 100px;
 left: 485px;
 top: 397px;
+user-select: none;
 
 background: #D9D9D9;
 border-radius: 19px;
@@ -79,6 +81,7 @@ width: 100px;
 height: 100px;
 left: 590px;
 top: 397px;
+user-select: none;
 
 background: #D9D9D9;
 border-radius: 19px;
@@ -93,6 +96,7 @@ width: 100px;
 height: 100px;
 left: 695px;
 top: 397px;
+user-select: none;
 
 background: #D9D9D9;
 border-radius: 19px;
@@ -107,6 +111,7 @@ width: 100px;
 height: 100px;
 left: 485px;
 top: 550px;
+user-select: none;
 
 background: #D9D9D9;
 border-radius: 19px;
@@ -121,6 +126,7 @@ width: 100px;
 height: 100px;
 left: 590px;
 top: 550px;
+user-select: none;
 
 background: #D9D9D9;
 border-radius: 19px;
@@ -135,6 +141,7 @@ width: 100px;
 height: 100px;
 left: 695px;
 top: 550px;
+user-select: none;
 
 background: #D9D9D9;
 border-radius: 19px;
@@ -149,6 +156,7 @@ width: 100px;
 height: 100px;
 left: 485px;
 top: 703px;
+user-select: none;
 
 background: #D9D9D9;
 border-radius: 19px;
@@ -163,6 +171,7 @@ width: 100px;
 height: 100px;
 left: 590px;
 top: 703px;
+user-select: none;
 
 background: #D9D9D9;
 border-radius: 19px;
@@ -177,6 +186,7 @@ width: 100px;
 height: 100px;
 left: 695px;
 top: 703px;
+user-select: none;
 
 background: #D9D9D9;
 border-radius: 19px;
@@ -407,6 +417,7 @@ top: 703px;
 
 background: #D9D9D9;
 border-radius: 19px;
+user-select: none;
 }
 
 .Plus {
@@ -418,6 +429,7 @@ width: 68px;
 height: 100px;
 left: 835px;
 top: 396px;
+user-select: none;
 
 background: #D9D9D9;
 border-radius: 19px;
@@ -432,6 +444,7 @@ width: 68px;
 height: 100px;
 left: 910px;
 top: 398px;
+user-select: none;
 
 background: #D9D9D9;
 border-radius: 19px;
@@ -446,6 +459,7 @@ width: 68px;
 height: 100px;
 left: 835px;
 top: 550px;
+user-select: none;
 
 background: #D9D9D9;
 border-radius: 19px;
@@ -460,6 +474,7 @@ width: 68px;
 height: 100px;
 left: 910px;
 top: 550px;
+user-select: none;
 
 background: #D9D9D9;
 border-radius: 19px;
@@ -722,6 +737,7 @@ top: 825px;
 
 background: #D9D9D9;
 border-radius: 19px;
+user-select: none;
 }
 
 .OutputScreen p {
