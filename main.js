@@ -29,27 +29,32 @@ function CreateNumber(x){
 }
 
 function ChooseOperation(oper) {
-   FirstNum = Number(FirstNum)
-   Operation = oper
-   CurrentNumber = 2
-   console.log(FirstNum)
-   NumIntegers = 0
+   if (FirstNum !== '') {
+      FirstNum = Number(FirstNum)
+      Operation = oper
+      CurrentNumber = 2
+      console.log(FirstNum)
+      NumIntegers = 0
+   }
 
 }
 
 function Calculate() {
-   SecondNum = Number(SecondNum)
-   if (Operation === '+') {
-      var ReturnValue = FirstNum + SecondNum
-   } if (Operation === '-') {
-      var ReturnValue = FirstNum - SecondNum
-   } if (Operation === '*') {
-      var ReturnValue = FirstNum * SecondNum
-   } if (Operation === '/') {
-      var ReturnValue = FirstNum / SecondNum
-   }
+   if (SecondNum !== '') {
 
-   document.getElementById("out").innerHTML = ReturnValue;
+      SecondNum = Number(SecondNum)
+      if (Operation === '+') {
+         var ReturnValue = FirstNum + SecondNum
+      } if (Operation === '-') {
+         var ReturnValue = FirstNum - SecondNum
+      } if (Operation === '*') {
+         var ReturnValue = FirstNum * SecondNum
+      } if (Operation === '/') {
+         var ReturnValue = FirstNum / SecondNum
+      }
+
+      document.getElementById("out").innerHTML = ReturnValue;
+   }
 }
 
 function Erase() {
