@@ -9,6 +9,9 @@ var CurrentNumber = 1;
 let Operation = '';
 var ReturnValue = 0;
 
+let Precision = 0;
+let List = '';
+
 
 function CreateNumber(x){
    if (CurrentNumber === 1) {
@@ -52,6 +55,26 @@ function Calculate() {
       } if (Operation === '/') {
          var ReturnValue = FirstNum / SecondNum
       }
+
+      List = ReturnValue.toString()
+
+      if (List.length > 13) {
+         List = List.split('.')
+
+         Precision = 13 - List[0].length
+
+         console.log(List[0].length, Precision)
+
+
+         ReturnValue = ReturnValue.toFixed(Precision)
+
+      }
+
+  
+
+      
+
+      console.log(List, Precision)
 
       document.getElementById("out").innerHTML = ReturnValue;
    }
