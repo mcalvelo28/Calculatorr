@@ -57,19 +57,21 @@ function Calculate() {
       }
 
       List = ReturnValue.toString()
+      console.log(List.length, (FirstNum.toString()).length, (SecondNum.toString()).length)
 
       if (List.length > 13) {
          List = List.split('.')
 
          Precision = 13 - List[0].length
+         console.log(Precision)
 
-         ReturnValue = ReturnValue.toFixed(Precision)
+         if (Precision < 0) {
+         ReturnValue = ReturnValue.toFixed(0)
+         } else {
+            ReturnValue = ReturnValue.toFixed(Precision)
+         }
 
       }
-
-  
-
-      
 
       console.log(List, Precision)
 
