@@ -7,11 +7,30 @@ var NumIntegers = 0;
 var CurrentNumber = 1;
 
 let Operation = '';
-var ReturnValue = 0;
+let ReturnValue = '';
 
 let Precision = 0;
 let List = '';
 
+function CreateCharacter(char){
+   if (char === '.') {
+      if (CurrentNumber === 1){
+         if (FirstNum.includes('.') === false){
+            FirstNum += char
+            console.log(char)
+            document.getElementById("out").innerHTML = FirstNum;
+            NumIntegers += 1
+         }
+      } if (CurrentNumber === 2){
+         if (SecondNum.includes('.') === false){
+            SecondNum += char
+            console.log(char)
+            document.getElementById("out").innerHTML = SecondNum;
+            NumIntegers += 1
+         }
+      }
+   }
+}
 
 function CreateNumber(x){
    if (CurrentNumber === 1) {
@@ -32,17 +51,25 @@ function CreateNumber(x){
 }
 
 function ChooseOperation(oper) {
-   if (FirstNum !== '') {
+   if (FirstNum !== '' && ReturnValue === '') {
       FirstNum = Number(FirstNum)
       Operation = oper
       CurrentNumber = 2
       console.log(FirstNum)
       NumIntegers = 0
+   } if (ReturnValue !== '') {
+      SecondNum = ''
+      Operation = oper
+      CurrentNumber = 2
+      console.log(FirstNum)
+      NumIntegers = 0
+      console.log('work')
    }
 
 }
 
 function Calculate() {
+   console.log(`first${FirstNum}, sec${SecondNum}`)
    if (SecondNum !== '') {
 
       SecondNum = Number(SecondNum)
@@ -57,12 +84,11 @@ function Calculate() {
       }
 
       List = ReturnValue.toString()
-      console.log(List.length, (FirstNum.toString()).length, (SecondNum.toString()).length)
 
       if (List.length > 13) {
          List = List.split('.')
 
-         Precision = 13 - List[0].length
+         Precision = 12 - List[0].length
          console.log(Precision)
 
          if (Precision < 0) {
@@ -76,11 +102,15 @@ function Calculate() {
       console.log(List, Precision)
 
       document.getElementById("out").innerHTML = ReturnValue;
+      FirstNum = ReturnValue
+      SecondNum = ''
    }
 }
 
 function Erase() {
    FirstNum = '';
+   Precision = 0;
+   List = '';
 
    SecondNum = '';
 
@@ -89,6 +119,6 @@ function Erase() {
    CurrentNumber = 1;
 
    Operation = '';
-   ReturnValue = 0;
+   ReturnValue = '';
    document.getElementById("out").innerHTML = FirstNum;
 }
