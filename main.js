@@ -63,9 +63,6 @@ function Calculate() {
 
          Precision = 13 - List[0].length
 
-         console.log(List[0].length, Precision)
-
-
          ReturnValue = ReturnValue.toFixed(Precision)
 
       }
