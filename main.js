@@ -12,6 +12,8 @@ let ReturnValue = '';
 let Precision = 0;
 let List = '';
 
+var NegativeValue = 1;
+
 function CreateCharacter(char){
    if (char === '.') {
       if (CurrentNumber === 1){
@@ -22,6 +24,7 @@ function CreateCharacter(char){
             NumIntegers += 1
          }
       } if (CurrentNumber === 2){
+         document.getElementById("sign").innerHTML = ' ';
          if (SecondNum.includes('.') === false){
             SecondNum += char
             console.log(char)
@@ -33,15 +36,17 @@ function CreateCharacter(char){
 }
 
 function CreateNumber(x){
+   NegativeValue = 1
+   NegativeText()
    if (CurrentNumber === 1) {
-      if (NumIntegers < 13) {
+      if (NumIntegers < 12) {
       FirstNum += x
       console.log(FirstNum)
       document.getElementById("out").innerHTML = FirstNum;
       NumIntegers += 1
       }
    } if (CurrentNumber === 2) {
-         if (NumIntegers < 13) {
+         if (NumIntegers < 12) {
          SecondNum += x
          console.log(SecondNum)
          document.getElementById("out").innerHTML = SecondNum;
@@ -52,17 +57,22 @@ function CreateNumber(x){
 
 function ChooseOperation(oper) {
    if (FirstNum !== '' && ReturnValue === '') {
-      FirstNum = Number(FirstNum)
+      FirstNum = Number(FirstNum) * NegativeValue
       Operation = oper
       CurrentNumber = 2
       console.log(FirstNum)
       NumIntegers = 0
+      NegativeValue = 1
+      NegativeText()
    } if (ReturnValue !== '') {
+      console.log(ReturnValue)
       SecondNum = ''
       Operation = oper
       CurrentNumber = 2
       console.log(FirstNum)
       NumIntegers = 0
+      NegativeValue = 1
+      NegativeText()
       console.log('work')
    }
 
@@ -71,8 +81,7 @@ function ChooseOperation(oper) {
 function Calculate() {
    console.log(`first${FirstNum}, sec${SecondNum}`)
    if (SecondNum !== '') {
-
-      SecondNum = Number(SecondNum)
+      SecondNum = Number(SecondNum) * NegativeValue
       if (Operation === '+') {
          var ReturnValue = FirstNum + SecondNum
       } if (Operation === '-') {
@@ -85,14 +94,14 @@ function Calculate() {
 
       List = ReturnValue.toString()
 
-      if (List.length > 13) {
+      if (List.length > 12) {
          List = List.split('.')
 
-         Precision = 12 - List[0].length
+         Precision = 11 - List[0].length
          console.log(Precision)
 
          if (Precision < 0) {
-         ReturnValue = ReturnValue.toFixed(0)
+            ReturnValue = ReturnValue.toFixed(0)
          } else {
             ReturnValue = ReturnValue.toFixed(Precision)
          }
@@ -101,8 +110,15 @@ function Calculate() {
 
       console.log(List, Precision)
 
-      document.getElementById("out").innerHTML = ReturnValue;
-      FirstNum = ReturnValue
+      if (ReturnValue < 0) {
+         NegativeText(ReturnValue)
+      } else {
+         NegativeText(ReturnValue)
+      }
+
+      document.getElementById("out").innerHTML = Math.abs(ReturnValue);
+      console.log(ReturnValue)
+      FirstNum = ReturnValue * NegativeValue
       SecondNum = ''
    }
 }
@@ -115,10 +131,30 @@ function Erase() {
    SecondNum = '';
 
    NumIntegers = 0;
+   NegativeValue = 1;
+   NegativeText(NegativeValue)
 
    CurrentNumber = 1;
 
    Operation = '';
    ReturnValue = '';
    document.getElementById("out").innerHTML = FirstNum;
+}
+
+function ChangeSign() {
+   if (NegativeValue === 1) {
+      NegativeValue = -1
+   } else {
+      NegativeValue = 1
+   }
+   NegativeText(NegativeValue)
+   console.log(NegativeValue)
+}
+
+function NegativeText(sign) {
+   if (sign < 0) {
+      document.getElementById("sign").innerHTML = '-';
+   } else {
+      document.getElementById("sign").innerHTML = ' ';
+   }
 }
